@@ -3,9 +3,9 @@ import axios from 'axios';
 export const FETCH_CONTACTS = 'fetch_contacts';
 export const CREATE_CONTACTS = 'fetch_contacts';
 
-export function fetchContacts() {
+export function fetchContacts(contact) {
 
-  const request = axios.get("http://45.55.54.146:8081/v1/contacts");
+  const request = axios.get("http://45.55.54.146:8081/v1/contacts", contact);
 
   return {
 

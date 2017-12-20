@@ -4,7 +4,7 @@ import { createContacts } from '../actions';
 
 
 
-class ContactForm extends React.Component {
+ class ContactForm extends React.Component {
 
     constructor(props) {
 
@@ -80,7 +80,4 @@ class ContactForm extends React.Component {
     }
 
 }
-function mapStateToProps(state) {
-  return { contacts: state.contacts};
-}
-export default  connect (mapStateToProps, { createContacts })(ContactForm);
+export default  connect (null, { createContacts })(ContactForm);

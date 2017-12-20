@@ -12,9 +12,9 @@ class ContactList extends Component {
     this.props.fetchContacts();
   }
   renderContacts(){
-    console.log("printing contacts from list component" +JSON.stringify(this.props.contacts));
+    //console.log("printing contacts from list component" +JSON.stringify(this.props.contacts));
     return _.map(this.props.contacts, contact =>{
-      console.log("printing contact from list component" +contact);
+    //console.log("printing contact from list component" +contact);
     return(<li className = "list-group-item" key = {contact.id}>
       {contact.name} {contact.email} {contact.phone}
       </li>
