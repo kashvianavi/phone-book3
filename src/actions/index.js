@@ -30,6 +30,7 @@ export function fetchContacts() {
 }
 export function deleteContacts(id) {
   console.log("Id is"+ id);
+  
 const request = axios.delete("http://45.55.54.146:8081/v1/contacts/{id}");
 
   return {
